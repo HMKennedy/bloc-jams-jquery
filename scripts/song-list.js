@@ -14,6 +14,10 @@
           </tr>
          `);
 
+         song.element.on('click', event => {
+           player.playPause(song);
+         });
+
     $('#song-list').append(song.element);
    });
 }
